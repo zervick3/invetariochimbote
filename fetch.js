@@ -45,12 +45,19 @@ formulario.addEventListener("submit", (e)=>{
         if(data==='ok'){
             
             
-                 resultadoTotal.innerHTML=`
+                  resultadoTotal.innerHTML=`
             <div class="alert alert-primary  " role="alert" >
              EXITO EN EL REGISTRO
             </div>
             `
-            
+            setTimeout(() => {
+                resultadoTotal.innerHTML=`
+                <div class="alert alert-primary  " role="alert" >
+                 EXITO EN EL REGISTRO
+                </div>
+                `
+                
+            }, 3000);
                
            
             
